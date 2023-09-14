@@ -1,0 +1,9 @@
+{
+  "name": "swansole",
+  "version": "1.0.0",
+  "description": "Annotated, drop-in replacement for the default Node console logger. Adds full date prefix and easy differentiation between log levels. ",
+  "main": "index.js",
+  "repository": "https://github.com/pitworker/swansole",
+  "author": "Swan Carpenter <swanio@duck.com>",
+  "license": "MIT"
+}
