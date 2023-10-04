@@ -1,4 +1,6 @@
-import chalk from "chalk";
+import pkg from "ansi-colors";
+
+const colors = pkg;
 
 const ERROR = 0;
 const WARN = 1;
@@ -37,28 +39,28 @@ const getTime = () => {
 class Console {
   static log(...args) {
     if (getLogLevel() >= INFO) {
-      args.unshift(getTime(), chalk.black.bgBlueBright("[   LOG   ]"));
+      args.unshift(getTime(), colors.black.bgBlueBright("[   LOG   ]"));
       console.log.apply(this, args);
     }
   }
 
   static debug(...args) {
     if (getLogLevel() >= DEBUG) {
-      args.unshift(getTime(), chalk.black.bgCyanBright("[  DEBUG  ]"));
+      args.unshift(getTime(), colors.black.bgCyanBright("[  DEBUG  ]"));
       console.debug.apply(this, args);
     }
   }
 
   static error(...args) {
     if (getLogLevel() >= ERROR) {
-      args.unshift(getTime(), chalk.black.bgRedBright("[  ERROR  ]"));
+      args.unshift(getTime(), colors.black.bgRedBright("[  ERROR  ]"));
       console.error.apply(this, args);
     }
   }
 
   static warn(...args) {
     if (getLogLevel() >= WARN) {
-      args.unshift(getTime(), chalk.black.bgYellowBright("[ WARNING ]"));
+      args.unshift(getTime(), colors.black.bgYellowBright("[ WARNING ]"));
       console.warn.apply(this, args);
     }
   }
