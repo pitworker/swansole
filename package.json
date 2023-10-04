@@ -1,6 +1,6 @@
 {
   "name": "swansole",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Annotated, drop-in replacement for the default Node console logger. Adds full date prefix and easy differentiation between log levels. ",
   "type": "module",
   "main": "index.js",
